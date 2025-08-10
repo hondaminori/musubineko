@@ -1,0 +1,20 @@
+{
+  "name": "musubineko",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/var/www/html",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "onecentlin.laravel-blade",
+        "xdebug.php-debug",
+        "esbenp.prettier-vscode"
+      ],
+      "postCreateCommand": "composer install"
+    }
+  }
+}
