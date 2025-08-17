@@ -1,0 +1,61 @@
+# 自動でできるもの
+*.log
+.DS_Store
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
+Thumbs.db
+
+# Laravelアプリに関連する除外
+/src/vendor/
+/src/node_modules/
+/src/.env
+/src/storage/*.key
+/src/storage/logs/*
+/src/storage/framework/cache/*
+/src/storage/framework/sessions/*
+/src/storage/framework/views/*
+/src/bootstrap/cache/*.php
+
+# PostgreSQLの永続ボリューム（コンテナで再構築可能）
+/pgdata/
+
+# VSCodeやDev Container関連の一時ファイル
+.vscode/
+.devcontainer/.devcontainer.json~  # 編集途中の一時ファイル（VSCode）
+*.swp
+*.swo
+
+# OS固有
+.DS_Store
+Thumbs.db
+
+# Docker系キャッシュやビルドファイル（任意で追加）
+*.pid
+docker-compose.yml
+Dockerfile
+
+# Laravelが生成するキャッシュやログ
+/src/storage/
+/src/vendor/
+/src/node_modules/
+/src/.env
+/pgdata/
